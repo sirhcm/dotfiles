@@ -31,6 +31,7 @@ in
       tabstop = 2;
     };
     extraConfig = ''
+      set clipboard=exclude:.*
       set nofixeol
       colorscheme handarbeit
       let g:lightline = {
