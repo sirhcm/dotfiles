@@ -5,6 +5,7 @@
     enable = true;
     shortcut = "a";
     extraConfig = ''
+      set-option -g default-command "exec $SHELL"
       unbind '"'
       unbind %
 
