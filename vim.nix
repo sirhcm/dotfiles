@@ -70,6 +70,7 @@ in
       let g:gutentags_generate_on_missing = 1
       let g:gutentags_generate_on_new = 1
       let g:gutentags_file_List_command = "git ls-files"
+      let g:gutentags_ctags_exclude = [ '.mypy_cache', '.venv' ]
 
       let g:ale_linters_explicit = 1
       let g:ale_linters = { 'python': ['ruff'] }
