@@ -9,6 +9,11 @@
       unbind '"'
       unbind %
 
+      set -g default-terminal "tmux-256color"
+      set -ga terminal-overrides ",*256col*:Tc"
+      set -ga terminal-overrides '*:Ss=\E[%p1%d q:Se=\E[ q'
+      set-environment -g COLORTERM "truecolor"
+
       set -g status-style 'fg=color1'
       set -g status-left ""
 
